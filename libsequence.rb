@@ -2,17 +2,9 @@ class Libsequence < Formula
   homepage "https://molpopgen.github.io/libsequence/"
   # tag "bioinformatics"
   # doi "10.1093/bioinformatics/btg316"
-  url "https://github.com/molpopgen/libsequence/archive/1.8.4.tar.gz"
-  sha256 "f45a04ae03d8fa6f2eae0a3cec72686028071c851c355e4aab84859bb2cb394a"
+  url "https://github.com/molpopgen/libsequence/archive/1.8.9.tar.gz"
+  sha256 "277f336e0401be4c8cb208cea151f2245a795e817db66edfcfbbc834883f614b"
   head "https://github.com/molpopgen/libsequence.git"
-
-  bottle do
-    cellar :any
-    revision 2
-    sha256 "3488ce470dd77c1bb26cd28d2104393de35a8c780ad89e83f499ec5b59813c87" => :yosemite
-    sha256 "6ba89329001cdacc6434016f78d1053e760a1468363b98e1b8b553205bc850a6" => :mavericks
-    sha256 "a1d89ba3fa084506185ed5842b6a8b5709281591178a9a3df414edb22d459463" => :mountain_lion
-  end
 
   cxx11 = OS.linux? || MacOS.version > :mountain_lion ? [] : ["c++11"]
 
